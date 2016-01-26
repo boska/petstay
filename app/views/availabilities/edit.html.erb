@@ -1,6 +1,5 @@
-<h1>Editing availability</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @availability %> |
-<%= link_to 'Back', availabilities_path %>
+<%- model_class = Availability -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => Availability %></h1>
+</div>
+<%= render :partial => 'form' %>

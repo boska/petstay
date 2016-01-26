@@ -1,5 +1,6 @@
-<h1>New availability</h1>
+<%- model_class = Availability -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => Availability %></h1>
+</div>
+<%= render :partial => 'form' %>
 
-<%= render 'form' %>
-
-<%= link_to 'Back', availabilities_path %>
