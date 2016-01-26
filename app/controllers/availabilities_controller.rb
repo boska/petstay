@@ -29,6 +29,7 @@ class AvailabilitiesController < ApplicationController
   # POST /availabilities.json
   def create
     @availability = Availability.new(availability_params)
+    @availability.user = current_user
 
     respond_to do |format|
       if @availability.save
